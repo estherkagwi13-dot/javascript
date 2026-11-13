@@ -12,6 +12,10 @@ for(let b=1; b<=5; b++){
 for(let x=5; x>=1; x--){
     console.log(x)
 }
-for (let y=10; y>=10; y-=5){
+for (let y=10; y>=0; y-=5){
     console.log(y)
 }
+for (let j=30; j>=0; j-=5){
+console.log(j)
+}
+//while loop
