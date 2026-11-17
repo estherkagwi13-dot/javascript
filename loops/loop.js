@@ -16,6 +16,11 @@ for (let y=10; y>=0; y-=5){
     console.log(y)
 }
 for (let j=30; j>=0; j-=5){
-console.log(j)
+console.log(`backwords loop: ${j}`)
 }
 //while loop
+let i= 1;
+while (i <=5){
+    console.log(i)
+    i++
+}
