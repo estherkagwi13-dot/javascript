@@ -1,13 +1,114 @@
-header{
-    background-color:aquamarine;
-    text-align: left;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color: bisque;
-}
-footer{
-    background-color: aquamarine;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif; 
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2563eb;
+    color: white;
+    padding: 15px 30px;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.container {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.container > p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+button {
+    padding: 12px 15px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#topicList {
+    list-style: none;
+}
+
+#topicList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #f8fafc;
+    border-radius: 6px;
+}
+
+#topicList span {
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.deleteButton {
+    background-color: #dc2626;
+}
+
+.deleteButton:hover {
+    background-color: #b91c1c;
+}
+
+#emptyMessage {
+    color: #999;
+    text-align: center;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 15px;
+    color: #666;
+    font-size: 0.9rem;
 }

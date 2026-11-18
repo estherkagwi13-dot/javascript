@@ -74,3 +74,9 @@ firstStudent.remove()
 students[1].remove()
 students[1].remove()
 students[1].remove()
+
+//trying again the names array new formula
+const cnames=["collins","cole","cyrus"]
+const studentlist=document.getElementById("studentList")
+
+for(const cnames of)
