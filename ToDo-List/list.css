@@ -105,6 +105,23 @@ button:hover {
     text-align: center;
 }
 
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.doneButton {
+    background-color: #16a34a;
+}
+
+.doneButton:hover {
+    background-color: #15803d;
+}
+
+.actions{
+    display: flex;
+    gap: 8px;
+}
 footer {
     margin-top: auto;
     text-align: center;

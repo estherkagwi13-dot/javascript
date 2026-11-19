@@ -70,7 +70,7 @@ students.forEach(function(student, index){
 })
 //removing items*i need to circle back here*
 const firstStudent=document.querySelector("li")
-firstStudent.remove()
+//firstStudent.remove()
 students[1].remove()
 students[1].remove()
 students[1].remove()
@@ -79,4 +79,24 @@ students[1].remove()
 const cnames=["collins","cole","cyrus"]
 const studentlist=document.getElementById("studentList")
 
-for(const cnames of)
+for(const name of cnames){
+    const li=document.createElement("li")
+li.textContent=name
+studentList.appendChild(li)
+}
+const message=document.getElementById("msg")
+message.remove()
+
+/**const removeBtn=document.getElementById("removeBtn")
+removeBtn.onclick=function(){
+    const firstStudent=document.querySelector("li")
+    firstStudent.remove()
+}
+    */
+
+removeBtn.onclick= function(){
+    const firstStudent=document.querySelector("li")
+    if (firstStudent !==null){
+        firstStudent.remove()
+    }
+}

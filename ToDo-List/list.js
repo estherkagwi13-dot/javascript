@@ -36,11 +36,25 @@ deleteButton.classList.add("deleteButton")
         li.remove()
         updateEmptyMessage()
     })
+//creating the button done
+ const doneButton=document.createElement("button")
+    doneButton.textContent="Done"
+    doneButton.classList.add("doneButton")
+
+    doneButton.addEventListener("click", function(){
+        topicName.classList.toggle("completed")
+    })
+
+const buttons=document.createElement("div")
+buttons.classList.add("buttons")
+buttons.appendChild(doneButton)
+buttons.appendChild(deleteButton)
 
     li.appendChild(topicName)
-    li.appendChild(deleteButton)
+    li.appendChild(buttons)
     topicList.appendChild(li)
 
+   
     //clear the input and update
     topicInput.value=""
     updateEmptyMessage()
