@@ -133,5 +133,90 @@ for (l = 20; l >= 2; l--) {
 
 /**
  * STUDENT MARKS ANALYZER
+ * dispaly every students mark
+ * calc total and average
+ * show highest and lowest mark
  */
-let marks=[75,45,89,60,32,95,50,68]
+console.log("All student Marks")
+let mark = [75, 45, 89, 60, 32, 95, 50, 68]
+for (i = 0; i < mark.length; i++) {
+    console.log(mark[i])
+}
+
+console.log("Above 50 mark")
+for (i = 0; i < mark.length; i++) {
+    if (mark[i] >= 50) {
+        console.log(mark[i])
+    }
+}
+
+
+console.log("below 50")
+for (i = 0; i < mark.length; i++) {
+    if (mark[i] <= 49) {
+        console.log(mark[i])
+    }
+}
+//counter of fail(below) and pass
+let fail = 0
+let passed = 0
+for (i = 0; i < mark.length; i++) {
+    if (mark[i] >= 50) {
+        passed++
+    }
+    else {
+        fail++ //shorthand for fail+1
+    }
+}
+console.log("Number of passes " + passed)
+console.log("Number of fails " + fail)
+
+
+console.log("Total mark")
+let totalMark = 0
+for (i = 0; i < mark.length; i++) {
+    totalMark = totalMark + mark[i]
+}
+console.log(totalMark)
+
+console.log("Average")
+let average = totalMark / mark.length
+console.log(average)
+console.log(`number of mark entries ${mark.length}`)
+
+console.log("Highest Mark")
+let highest = mark[0]
+for (i = 0; i < mark.length; i++) {
+    if (mark[i] > highest) {
+        highest = mark[i]
+    }
+}
+console.log(highest)
+
+console.log("Lowest Mark")
+let lowest = mark[0]
+for (i = 0; i < mark.length; i++) {
+    if (mark[i] < lowest) {
+        lowest = mark[i]
+    }
+}
+console.log(lowest)
+
+//GRADING
+for (i = 0; i < mark.length; i++) {
+    if (mark[i] >= 80) {
+        console.log(`Student mark-${mark[i]} A`)
+    }
+    else if
+        (mark[i] >= 70) {
+        console.log(`Student mark-${mark[i]} B`)
+    }
+    else if
+        (mark[i] >= 60) {
+        console.log(`Student mark-${mark[i]} C`)
+    }
+    else if (mark[i] >= 50) {
+        console.log(`Student mark-${mark[i]} D`)
+
+    } else { console.log(`Student mark-${mark[i]} fail`) }
+}
